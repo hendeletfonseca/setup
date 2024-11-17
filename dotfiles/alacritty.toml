@@ -1,0 +1,8 @@
+[window]
+padding={x=12,y=12}
+
+[font]
+normal={family="Jetbrains Mono Nerd Font", style="Medium"}
+italic={family="Jetbrains Mono Nerd Font", style="MediumItalic"}
+bold={family="Jetbrains Mono Nerd Font", style="Bold"}
+bold_italic={family="Jetbrains Mono Nerd Font", style="BoldItalic"}
