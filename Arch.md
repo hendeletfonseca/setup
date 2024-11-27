@@ -78,6 +78,19 @@ yay -Syu google-chrome firefox visual-studio-code-bin
 flatpak install flathub com.obsproject.Studio com.spotify.Client com.brave.Browser org.qbittorrent.qBittorrent org.telegram.desktop com.mattjakeman.ExtensionManager com.github.xournalpp.xournalpp com.github.PintaProject.Pinta com.vixalien.sticky net.nokyan.Resources io.missioncenter.MissionCenter io.gitlab.theevilskeleton.Upscaler dev.vencord.Vesktop io.dbeaver.DBeaverCommunity
 ```
 
+## Automatically mute sound output when a headset is connected
+```sh-session
+yay -Syu alsa-utils
+```
+List of PLAYBACK Hardware Devices
+```sh-session
+aplay -l
+```
+Change 1 to card number (probably will be 1)
+```sh-session
+amixer -c 1 set 'Auto-Mute Mode' Disabled
+```
+
 ## Gnome Extensions
 
 Clipboard manager, check github because sometimes release that support latest gnome isn't published

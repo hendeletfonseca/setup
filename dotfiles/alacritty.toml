@@ -1,8 +1,22 @@
+[general]
+import = ["~/.config/alacritty/catppuccin-latte.toml"]
+
+[env]
+TERM = "xterm-256color"
+
 [window]
 padding={x=12,y=12}
+decorations="None"
+startup_mode="Maximized"
 
 [font]
 normal={family="Jetbrains Mono Nerd Font", style="Medium"}
 italic={family="Jetbrains Mono Nerd Font", style="MediumItalic"}
 bold={family="Jetbrains Mono Nerd Font", style="Bold"}
 bold_italic={family="Jetbrains Mono Nerd Font", style="BoldItalic"}
+
+[selection]
+save_to_clipboard=true
+
+[terminal]
+shell = { program = "/bin/zsh" }
